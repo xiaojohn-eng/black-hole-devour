@@ -1,3 +1,5 @@
+> **方向已改为城市版**，见新仓库：[black-hole-city](https://github.com/xiaojohn-eng/black-hole-city) / 试玩 https://xiaojohn-eng.github.io/black-hole-city/
+
 # 黑洞吞噬（Black Hole Devour）
 
 一款基于 **Vite + TypeScript + Three.js** 的纯前端网页游戏。控制黑洞在宇宙中移动、吸引并吞噬天体，不断成长，挑战三关递增难度，成为超级黑洞！
