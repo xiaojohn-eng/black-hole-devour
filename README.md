@@ -65,9 +65,12 @@ npx --yes serve dist -l 4173
 
 ## 部署
 
-本仓库通过 GitHub Actions 将 `dist` 发布到 `gh-pages` 分支。
+- 静态产物在 `dist/`，`vite.config.ts` 已设置 `base: '/black-hole-devour/'`。
+- 仓库含 `.github/workflows/deploy.yml`（push 到 `main` 时构建并发布到 `gh-pages`）。
+- 若 Actions 因账号计费/额度无法跑通，可本地 `npm run build` 后将 `dist` 内容强制推到 `gh-pages` 分支。
+- Pages Source：`gh-pages` / `/ (root)`。站点需为 **Public** 仓库（免费计划）。
 
-手动开启 Pages（若 Actions 已推送但站点未开）：
+手动开启 Pages：
 
 1. 打开 https://github.com/xiaojohn-eng/black-hole-devour/settings/pages
 2. Build and deployment → Source 选择 **Deploy from a branch**
